@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Utils - AstroDestroyer</title>
+    <h1>Welcome to text analyzer! Enter your text below:</h1>
+    <form action="\analyze" method="post"> {% csrf_token %}
+        <textarea name="text" style="margin: 0px; width: 661px; height: 188px;"></textarea><br>
+        <input type="checkbox" name="removepunc">Remove Punctuations<br>
+        <input type="checkbox" name="fullcaps">CAPITALIZE<br>
+        <input type="checkbox" name="newlineremover">Remove NewLines<br>
+        <input type="checkbox" name="extraspaceremover">Remove Extra Spaces<br>
+        <input type="checkbox" name="charcounter">Count Number of Characters<br>
+        <input type="submit" value="Analyze Text">
+    </form>
+</head>
+<body>
+
+</body>
+</html>
